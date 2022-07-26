@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>My Weather App</title>
+</head>
+<body>
+
+    <div class="container my-5 mx-auto">
+
+        <h1 class="text-muted text-center my-4">My Weather App</h1>
+    
+        <form class="change-location my-4 text-center text-muted">
+          <label for="city">Enter a location for weather information</label>
+          <div class="enter">
+          <input type="text" name="city" placeholder="Enter Your City" class="form-control p-4" > 
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M7.5 13.5C10.8137 13.5 13.5 10.8137 13.5 7.5C13.5 4.18629 10.8137 1.5 7.5 1.5C4.18629 1.5 1.5 4.18629 1.5 7.5C1.5 10.8137 4.18629 13.5 7.5 13.5Z" stroke="#3B3B3B" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M15.4999 15.5L11.7419 11.742" stroke="#3B3B3B" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+           </svg></div>
+        </form>
+        
+        <div class="card shadow-lg rounded d-none">
+          <img src="https://via.placeholder.com/400x300" class="time card-img-top">
+          <div class="icon bg-light mx-auto text-center">
+            <!-- icon here later -->
+          </div>
+          <div class="text-muted text-uppercase text-center details">
+            <!-- Details Displayed Here -->
+          </div>
+        </div>
+        
+      </div> 
+  
+  <script src="scripts/forecast.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
